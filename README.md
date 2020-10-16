@@ -16,7 +16,7 @@ Soontm.
 At the moment, only the Kext is implemented; however, _kexts are deprecated moving forward_ and as a result **this will not work on Big Sur**. The code as is written will port mostly fine to a DriverKit solution, I just need to find time to do it.
 
 ### Acknowledgements
-- Thanks in particular to Nikki, Frisk, and trickyd in the Slippi macOS Discord for their testing/input/review.
+- Thanks in particular to Nikki, Frisk, Purple, and trickyd in the Slippi macOS Discord for their testing/input/review.
 - The general idea for the structure this uses is borrowed from [this implementation for Linux](https://github.com/HannesMann/gcadapter-oc-kmod), albeit written with macOS nuances and frameworks in mind.
 
 ### Legal (MIT License)
