@@ -3,6 +3,7 @@ This repository contains adapter driver(s) for macOS, specifically for controlle
 
 Successfully tested on the following:
 
+- Official adapter.
 - MayFlash 4-port adapter.
 
 ### Installation
