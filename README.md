@@ -7,7 +7,17 @@ Successfully tested on the following:
 - MayFlash 4-port adapter.
 
 ### Installation
-Soontm.
+As this is currently a pre-release (not signed) kernel extension, you will need to disable SIP. Once signing has been worked out for the varying OS's this should be turned back on.
+
+### Kext
+- Reboot into Recovery Mode, open a terminal
+- Run `csrutil disable && csrutil enable --without kext`
+- Reboot into normal mode
+- Copy `GCAdapterDriver.kext` to `/Library/Extensions/GCAdapterDriver.kext`
+- Run `sudo chown -R root:wheel /Library/Extensions/GCAdapterDriver.kext` to ensure correct permissions are set
+- Run `sudo kextutil /Library/Extensions/GCAdapterDriver.kext`. It may complain about signing; this is what we're aiming to fix in the full release.
+
+If you have a different driver installed, you may need to make sure it's uninstalled before loading this one.
 
 ### Building from Source
 - Open in Xcode. Depending on what OS you're building from, you might need the Kext (10.13-10.15) or the DriverKit (10.15+) project. If you're building the Kext, ensure you're using the correct Xcode for the platform you're on.
@@ -16,7 +26,7 @@ Soontm.
 At the moment, only the Kext is implemented; however, _kexts are deprecated moving forward_ and as a result **this will not work on Big Sur**. The code as is written will port mostly fine to a DriverKit solution, I just need to find time to do it.
 
 ### Acknowledgements
-- Thanks in particular to Nikki, Frisk, Purple, and trickyd in the Slippi macOS Discord for their testing/input/review.
+- Thanks in particular to Nikki, Frisk, PurpleZ, and trickyd in the Slippi macOS Discord for their testing/input/review.
 - The general idea for the structure this uses is borrowed from [this implementation for Linux](https://github.com/HannesMann/gcadapter-oc-kmod), albeit written with macOS nuances and frameworks in mind.
 
 ### Legal (MIT License)
