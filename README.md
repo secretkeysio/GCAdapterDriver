@@ -11,7 +11,7 @@ As this is currently a pre-release (not signed) kernel extension, you will need 
 
 ### Kext
 - Reboot into Recovery Mode, open a terminal
-- Run `csrutil disable && csrutil enable --without-kext`
+- Run `csrutil disable && csrutil enable --without kext`
 - Reboot into normal mode
 - Copy `GCAdapterDriver.kext` to `/Library/Extensions/GCAdapterDriver.kext`
 - Run `sudo chown -R root:wheel /Library/Extensions/GCAdapterDriver.kext` to ensure correct permissions are set
