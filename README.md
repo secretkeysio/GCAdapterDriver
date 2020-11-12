@@ -23,7 +23,7 @@ If you have a different driver installed, you may need to make sure it's uninsta
 - Open in Xcode. Depending on what OS you're building from, you might need the Kext (10.13-10.15) or the DriverKit (10.15+) project. If you're building the Kext, ensure you're using the correct Xcode for the platform you're on.
 - For Kext: `Product -> Archive -> Distribute Contents -> Built Archive`
 
-At the moment, only the Kext is implemented; however, _kexts are deprecated moving forward_ and as a result **this will not work on Big Sur**. The code as is written will port mostly fine to a DriverKit solution, I just need to find time to do it.
+At the moment, only the Kext is implemented; however, _kexts are deprecated moving forward_. The code as is written will port mostly fine to a DriverKit solution, I just need to find time to do it.
 
 ### Acknowledgements
 - Thanks in particular to Nikki, Frisk, PurpleZ, and trickyd in the Slippi macOS Discord for their testing/input/review.
