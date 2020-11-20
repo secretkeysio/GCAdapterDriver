@@ -9,6 +9,8 @@ Successfully tested on the following:
 ### Installation
 As this is currently a pre-release (not signed) kernel extension, you will need to disable SIP. Once signing has been worked out for the varying OS's this should be turned back on.
 
+**Note that this is currently _not_ supported on Apple Silicon Macs**
+
 ### Kext
 - Reboot into Recovery Mode, open a terminal
 - Run `csrutil disable && csrutil enable --without kext`
