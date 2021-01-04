@@ -9,9 +9,7 @@ Successfully tested on the following:
 ### Installation
 As this is currently a pre-release (not signed) kernel extension, you will need to disable SIP. Once signing has been worked out for the varying OS's this should be turned back on.
 
-**Note that this is currently _not_ supported on Apple Silicon Macs**
-
-### Kext
+### Kext (Intel Macs)
 - Reboot into Recovery Mode, open a terminal
 - Run `csrutil disable && csrutil enable --without kext`
 - Reboot into normal mode
@@ -19,7 +17,7 @@ As this is currently a pre-release (not signed) kernel extension, you will need 
 - Run `sudo chown -R root:wheel /Library/Extensions/GCAdapterDriver.kext` to ensure correct permissions are set
 - Run `sudo kextutil /Library/Extensions/GCAdapterDriver.kext`. It may complain about signing; this is what we're aiming to fix in the full release.
 
-If you have a different driver installed, you may need to make sure it's uninstalled before loading this one.
+If you have a different driver installed, you may need to make sure it's uninstalled before loading this one. Note that Apple Silicon Macs have different recovery mode steps, which you should understand before doing this process - if it's not your thing, use `SmashEnabler` until the DriverKit version of this is released.
 
 ### Building from Source
 - Open in Xcode. Depending on what OS you're building from, you might need the Kext (10.13-10.15) or the DriverKit (10.15+) project. If you're building the Kext, ensure you're using the correct Xcode for the platform you're on.
