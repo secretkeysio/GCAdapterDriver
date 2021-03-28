@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7043A10C25A2B158004365D1 /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7043A10B25A2B158004365D1 /* DriverKit.framework */; };
+		7043A10F25A2B158004365D1 /* GCAdapterDriverKit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7043A10E25A2B158004365D1 /* GCAdapterDriverKit.cpp */; };
+		7043A11125A2B158004365D1 /* GCAdapterDriverKit.iig in Sources */ = {isa = PBXBuildFile; fileRef = 7043A11025A2B158004365D1 /* GCAdapterDriverKit.iig */; };
+		70988641260FF2A000D11932 /* USBDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70988640260FF2A000D11932 /* USBDriverKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7043A10825A2B158004365D1 /* com.secretkeys.gcadapterdriverkitext.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = com.secretkeys.gcadapterdriverkitext.dext; sourceTree = BUILT_PRODUCTS_DIR; };
+		7043A10B25A2B158004365D1 /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		7043A10E25A2B158004365D1 /* GCAdapterDriverKit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GCAdapterDriverKit.cpp; sourceTree = "<group>"; };
+		7043A11025A2B158004365D1 /* GCAdapterDriverKit.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = GCAdapterDriverKit.iig; sourceTree = "<group>"; };
+		7043A11225A2B158004365D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7043A11325A2B158004365D1 /* GCAdapterDriverKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GCAdapterDriverKit.entitlements; sourceTree = "<group>"; };
+		70988640260FF2A000D11932 /* USBDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = USBDriverKit.framework; path = System/DriverKit/System/Library/Frameworks/USBDriverKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7043A10525A2B158004365D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70988641260FF2A000D11932 /* USBDriverKit.framework in Frameworks */,
+				7043A10C25A2B158004365D1 /* DriverKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7043A0FE25A2B158004365D1 = {
+			isa = PBXGroup;
+			children = (
+				7043A10D25A2B158004365D1 /* GCAdapterDriverKit */,
+				7043A10A25A2B158004365D1 /* Frameworks */,
+				7043A10925A2B158004365D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7043A10925A2B158004365D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7043A10825A2B158004365D1 /* com.secretkeys.gcadapterdriverkitext.dext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7043A10A25A2B158004365D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70988640260FF2A000D11932 /* USBDriverKit.framework */,
+				7043A10B25A2B158004365D1 /* DriverKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7043A10D25A2B158004365D1 /* GCAdapterDriverKit */ = {
+			isa = PBXGroup;
+			children = (
+				7043A10E25A2B158004365D1 /* GCAdapterDriverKit.cpp */,
+				7043A11025A2B158004365D1 /* GCAdapterDriverKit.iig */,
+				7043A11225A2B158004365D1 /* Info.plist */,
+				7043A11325A2B158004365D1 /* GCAdapterDriverKit.entitlements */,
+			);
+			path = GCAdapterDriverKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7043A10325A2B158004365D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7043A10725A2B158004365D1 /* GCAdapterDriverKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7043A11625A2B158004365D1 /* Build configuration list for PBXNativeTarget "GCAdapterDriverKit" */;
+			buildPhases = (
+				7043A10325A2B158004365D1 /* Headers */,
+				7043A10425A2B158004365D1 /* Sources */,
+				7043A10525A2B158004365D1 /* Frameworks */,
+				7043A10625A2B158004365D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCAdapterDriverKit;
+			productName = GCAdapterDriverKit;
+			productReference = 7043A10825A2B158004365D1 /* com.secretkeys.gcadapterdriverkitext.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7043A0FF25A2B158004365D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7043A10725A2B158004365D1 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7043A10225A2B158004365D1 /* Build configuration list for PBXProject "GCAdapterDriverKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7043A0FE25A2B158004365D1;
+			productRefGroup = 7043A10925A2B158004365D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7043A10725A2B158004365D1 /* GCAdapterDriverKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7043A10625A2B158004365D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7043A10425A2B158004365D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7043A11125A2B158004365D1 /* GCAdapterDriverKit.iig in Sources */,
+				7043A10F25A2B158004365D1 /* GCAdapterDriverKit.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7043A11425A2B158004365D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = driverkit;
+			};
+			name = Debug;
+		};
+		7043A11525A2B158004365D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = driverkit;
+			};
+			name = Release;
+		};
+		7043A11725A2B158004365D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GCAdapterDriverKit/GCAdapterDriverKit.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8JNDBG9U79;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				INFOPLIST_FILE = GCAdapterDriverKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretkeys.gcadapterdriverkitext;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = GCAdapterDriverKitExt;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7043A11825A2B158004365D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GCAdapterDriverKit/GCAdapterDriverKit.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 8JNDBG9U79;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				INFOPLIST_FILE = GCAdapterDriverKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.secretkeys.gcadapterdriverkitext;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = GCAdapterDriverKitExt;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7043A10225A2B158004365D1 /* Build configuration list for PBXProject "GCAdapterDriverKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7043A11425A2B158004365D1 /* Debug */,
+				7043A11525A2B158004365D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7043A11625A2B158004365D1 /* Build configuration list for PBXNativeTarget "GCAdapterDriverKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7043A11725A2B158004365D1 /* Debug */,
+				7043A11825A2B158004365D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7043A0FF25A2B158004365D1 /* Project object */;
+}
