@@ -40,8 +40,11 @@
             <integer>823</integer>
             <key>idVendor</key>
             <integer>1406</integer>
-<!--            <string>*</string>-->
-		</dict>
+            <key>bInterfaceProtocol</key>
+			<integer>0</integer>
+			<key>bInterfaceSubClass</key>
+			<integer>1</integer>
+        </dict>
 	</dict>
 	<key>OSBundleUsageDescription</key>
 	<string>Enables interfacing with Gamecube controllers under macOS.</string>

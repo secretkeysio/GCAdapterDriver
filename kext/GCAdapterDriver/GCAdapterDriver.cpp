@@ -1,5 +1,6 @@
 #include <IOKit/IOLib.h>
 #include <IOKit/usb/IOUSBHostInterface.h>
+#include <IOKit/usb/IOUSBHostFamily.h>
 #include <os/log.h>
 
 #include "GCAdapterDriver.hpp"
@@ -94,8 +95,8 @@ void GCAdapterDriver::updateInterval(IOUSBHostInterface *interface)
             configDescriptor,
             interfaceDescriptor,
             endpointDescriptor
-        ))
-    ) {
+        )
+    )) {
         if(endpointDescriptor->bEndpointAddress == 0x81 || endpointDescriptor->bEndpointAddress == 0x02) {
             IOUSBHostPipe *pipe = interface->copyPipe(StandardUSB::getEndpointAddress(endpointDescriptor));
             
