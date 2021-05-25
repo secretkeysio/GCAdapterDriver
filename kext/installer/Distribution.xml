@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <title>GCAdapterDriver</title>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <license file="license.html" mime-type="text/html"/>
+    <conclusion file="conclusion.html" mime-type="text/html"/>
+
+    <allowed-os-versions>
+        <os-version min="10.13" before="11.0"/>
+    </allowed-os-versions>
+
+    <pkg-ref id="com.secretkeys.installer.GCAdapterDriver">
+        <must-close>
+            <app id="com.project-slippi.dolphin"/>
+            <app id="org.dolphin-emu.dolphin"/>
+            <app id="org.ishiiruka.dolphin"/>
+        </must-close>
+    </pkg-ref>
+
+    <!-- Note that specifying only x86_64 doesn't *block* M1 devices from running this, but the 11.0 check in allowed-os-versions will do that. This is more for "correctness". -->
+    <options customize="always" require-scripts="false" rootVolumeOnly="true" hostArchitectures="x86_64"/>
+    <choices-outline>
+        <line choice="PassThrough"/>
+        <line choice="Overclocked"/>
+    </choices-outline>
+
+    <choice id="PassThrough" title="Standard Driver" start-selected="true" selected="!choices.Overclocked.selected" description="The standard driver polls controllers at a system-specified rate. If you play competitive games, you probably want the &quot;overclocked&quot; driver." visible="true">
+        <pkg-ref id="com.secretkeys.driver.GCAdapterDriverPassThrough"/>
+    </choice>
+
+    <choice id="Overclocked" start_selected="false" selected="!choices.PassThrough.selected" title="&quot;Overclocked&quot; Driver" description="If you play competitive games, you probably want this driver. Attempts to poll controllers faster to reduce dropped inputs." visible="true">
+        <pkg-ref id="com.secretkeys.driver.GCAdapterDriver"/>
+    </choice>
+
+    <pkg-ref id="com.secretkeys.driver.GCAdapterDriver" version="1.0.0" onConclusion="none">GCAdapterDriver.pkg</pkg-ref>
+
+    <pkg-ref id="com.secretkeys.driver.GCAdapterDriverPassThrough" version="1.0.0" onConclusion="none">GCAdapterDriverPassThrough.pkg</pkg-ref>
+</installer-gui-script>

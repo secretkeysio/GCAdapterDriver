@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <title>GCAdapterDriver</title>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <license file="license.html" mime-type="text/html"/>
+    <conclusion file="conclusion.html" mime-type="text/html"/>
+
+    <allowed-os-versions>
+        <os-version min="10.13" before="11.0"/>
+    </allowed-os-versions>
+
+    <pkg-ref id="com.secretkeys.driver.GCAdapterDriver">
+        <must-close>
+            <app id="com.project-slippi.dolphin"/>
+            <app id="org.dolphin-emu.dolphin"/>
+            <app id="org.ishiiruka.dolphin"/>
+        </must-close>
+    </pkg-ref>
+
+    <options customize="never" require-scripts="false" rootVolumeOnly="true" hostArchitectures="x86_64"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.secretkeys.driver.GCAdapterDriver"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.secretkeys.driver.GCAdapterDriver" title="&quot;Overclocked&quot; Driver" description="If you play competitive games, you probably want this driver. Attempts to poll devices faster to reduce dropped inputs." visible="false">
+        <pkg-ref id="com.secretkeys.driver.GCAdapterDriver"/>
+    </choice>
+    <pkg-ref id="com.secretkeys.driver.GCAdapterDriver" version="1.0.0" onConclusion="none">GCAdapterDriver.pkg</pkg-ref>
+</installer-gui-script>
