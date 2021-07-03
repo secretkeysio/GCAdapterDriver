@@ -1,0 +1,24 @@
+//
+//  GCAdapterDriverKitExtension.iig
+//  GCAdapterDriverKitExtension
+//
+//  Created by Ryan McGrath on 6/15/21.
+//
+
+#ifndef GCAdapterDriverKitExtension_h
+#define GCAdapterDriverKitExtension_h
+
+#include <Availability.h>
+#include <DriverKit/IOService.iig>
+
+class GCAdapterDriverKitExtension: public IOService
+{
+public:
+    virtual kern_return_t
+    Start(IOService * provider) override;
+
+    virtual kern_return_t
+    Stop(IOService * provider) override;
+};
+
+#endif /* GCAdapterDriverKitExtension_h */

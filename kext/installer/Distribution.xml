@@ -32,7 +32,7 @@
         <pkg-ref id="com.secretkeys.driver.GCAdapterDriver"/>
     </choice>
 
-    <pkg-ref id="com.secretkeys.driver.GCAdapterDriver" version="1.0.0" onConclusion="none">GCAdapterDriver.pkg</pkg-ref>
+    <pkg-ref id="com.secretkeys.driver.GCAdapterDriver" version="1.0.0" onConclusion="none">GCAdapterDriverOverclocked.pkg</pkg-ref>
 
     <pkg-ref id="com.secretkeys.driver.GCAdapterDriverPassThrough" version="1.0.0" onConclusion="none">GCAdapterDriverPassThrough.pkg</pkg-ref>
 </installer-gui-script>

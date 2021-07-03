@@ -21,8 +21,6 @@
     <string>SmashDummy</string>
     <key>CFBundlePackageType</key>
     <string>KEXT</string>
-    <key>CFBundleSignature</key>
-    <string>????</string>
     <key>CFBundleVersion</key>
     <string>1.0.0</string>
     <key>IOKitPersonalities</key>
