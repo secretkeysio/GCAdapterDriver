@@ -9,7 +9,7 @@ Successfully tested on the following:
 This repository is fairly technical in nature - if all you want is to install support for your adapter, please [visit the project homepage](https://secretkeys.io/gcadapterdriver).
 
 ### Developing
-If you'd like to try and build this yourself and/or tinker, fair warning: it's a little more obtuse than conventional macOS development. You'll likely want to temporarily disable System Integrity Protection (SIP) and/or set `systemextensionctl developer on` if you've not got the appropriate entitlements to sign your bundle with.
+If you'd like to try and build this yourself and/or tinker, fair warning: it's a little more obtuse than conventional macOS development. You'll likely want to temporarily disable System Integrity Protection (SIP) and/or set `systemextensionsctl developer on` if you've not got the appropriate entitlements to sign your bundle with.
 
 ### Enabling Developer Mode
 - Reboot into Recovery Mode, open a terminal
